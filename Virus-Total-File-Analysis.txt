@@ -16,7 +16,7 @@ NC='\033[0m' # No Color
 
 # Function to display usage
 usage() {
-    echo "Usage: $0 C:\Users\bruce\Desktop\suspicious-files.exe [options]"
+    echo "Usage: $0 C:\Users\bruce\Desktop\suspicious-files\*.exe [options]"
     echo "Options:"
     echo "  -q, --quiet    Quiet mode (less output)"
     echo "  -v, --verbose  Verbose mode (more details)"
@@ -48,7 +48,7 @@ upload_file() {
     response=$(curl -s --request POST \
         --url "${https://www.virustotal.com/gui/user/Jjp5281/apikey}/files" \
         --header "x-apikey: ${VT_API_KEY}" \
-        --form "file=@${file_path}")
+        --form "file=@${C:\Users\bruce\Desktop\suspicious-files\*.exe}")
    
     # Extract analysis ID
     analysis_id=$(echo "$response" | jq -r '.data.id')
@@ -72,7 +72,7 @@ check_analysis_status() {
     echo -e "${BLUE}[*] Checking analysis status...${NC}"
    
     response=$(curl -s --request GET \
-        --url "${API_URL}/analyses/${analysis_id}" \
+        --url "${https://www.virustotal.com/gui/user/Jjp5281/apikey}/analyses/${analysis_id}" \
         --header "x-apikey: ${VT_API_KEY}")
    
     status=$(echo "$response" | jq -r '.data.attributes.status')
