@@ -16,7 +16,7 @@ NC='\033[0m' # No Color
 
 # Function to display usage
 usage() {
-    echo "Usage: $0 C:\Users\bruce\Desktop\suspicious-files [options]"
+    echo "Usage: $0 C:\Users\bruce\Desktop\suspicious-files\ [options]"
     echo "Options:"
     echo "  -q, --quiet    Quiet mode (less output)"
     echo "  -v, --verbose  Verbose mode (more details)"
