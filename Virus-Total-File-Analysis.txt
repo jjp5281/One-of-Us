@@ -5,7 +5,7 @@
 
 # Configuration
 VT_API_KEY=a6a709f53dcc87f7c0c323d9bdf8b789edfa6ba0d7e3a301bfbf1a4d41cc3ed6  # Replace with your actual API key
-API_URL="https://na01.safelinks.protection.outlook.com/?url=https%3A%2F%2Fwww.virustotal.com%2Fapi%2Fv3&data=05%7C02%7C%7C55a668c9592141d3c25408de175190c1%7C84df9e7fe9f640afb435aaaaaaaaaaaa%7C1%7C0%7C638973836258149347%7CUnknown%7CTWFpbGZsb3d8eyJFbXB0eU1hcGkiOnRydWUsIlYiOiIwLjAuMDAwMCIsIlAiOiJXaW4zMiIsIkFOIjoiTWFpbCIsIldUIjoyfQ%3D%3D%7C0%7C%7C%7C&sdata=X4bAOB3avKKLzH8rNRH3w6Ks1L29lki0fNCntPMT2Mc%3D&reserved=0"
+API_URL="https://www.virustotal.com/gui/user/Jjp5281/apikey"
 
 # Colors for output
 RED='\033[0;31m'
@@ -46,7 +46,7 @@ upload_file() {
    
     # Upload file
     response=$(curl -s --request POST \
-        --url "${API_URL}/files" \
+        --url "${https://www.virustotal.com/gui/user/Jjp5281/apikey}/files" \
         --header "x-apikey: ${VT_API_KEY}" \
         --form "file=@${file_path}")
    
@@ -209,7 +209,7 @@ main() {
     done
    
     # Validate input
-    if [ -z "$file_path" ]; then
+    if [ -z C:\Users\bruce\Desktop\suspicious-files ]; then
         echo -e "${RED}Error: No file specified${NC}"
         usage
     fi
@@ -223,7 +223,7 @@ main() {
     check_dependencies
    
     # Check API key
-    if [ "$VT_API_KEY" = "YOUR_API_KEY_HERE" ]; then
+    if [ "$VT_API_KEY" = a6a709f53dcc87f7c0c323d9bdf8b789edfa6ba0d7e3a301bfbf1a4d41cc3ed6 ]; then
         echo -e "${RED}Error: Please set your VirusTotal API key in the script${NC}"
         exit 1
     fi
