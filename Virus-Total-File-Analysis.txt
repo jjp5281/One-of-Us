@@ -235,7 +235,7 @@ main() {
     fi
    
     # Upload file
-    analysis_id=$(upload_file "$file_path")
+    analysis_id=$(upload_file C:\Users\bruce\Desktop\suspicious-files)
    
     # Wait for analysis
     if ! wait_for_analysis "$analysis_id"; then
