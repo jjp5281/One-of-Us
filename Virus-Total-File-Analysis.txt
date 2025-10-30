@@ -4,7 +4,7 @@
 # Requires: curl, jq (for JSON parsing)
 
 # Configuration
-VT_API_KEY="YOUR_API_KEY_HERE"  # Replace with your actual API key
+VT_API_KEY=a6a709f53dcc87f7c0c323d9bdf8b789edfa6ba0d7e3a301bfbf1a4d41cc3ed6  # Replace with your actual API key
 API_URL="https://na01.safelinks.protection.outlook.com/?url=https%3A%2F%2Fwww.virustotal.com%2Fapi%2Fv3&data=05%7C02%7C%7C55a668c9592141d3c25408de175190c1%7C84df9e7fe9f640afb435aaaaaaaaaaaa%7C1%7C0%7C638973836258149347%7CUnknown%7CTWFpbGZsb3d8eyJFbXB0eU1hcGkiOnRydWUsIlYiOiIwLjAuMDAwMCIsIlAiOiJXaW4zMiIsIkFOIjoiTWFpbCIsIldUIjoyfQ%3D%3D%7C0%7C%7C%7C&sdata=X4bAOB3avKKLzH8rNRH3w6Ks1L29lki0fNCntPMT2Mc%3D&reserved=0"
 
 # Colors for output
